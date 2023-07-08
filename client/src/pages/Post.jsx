@@ -25,7 +25,15 @@ export default function Post() {
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify(form),
         })
-      } catch (error) {}
+        await response.json()
+        navigate('/')
+      } catch (error) {
+        alert(error)
+      } finally {
+        setLoading(false)
+      }
+    } else {
+      alert('Please enter a prompt to generate an image.')
     }
   }
   const handleChange = (e) => {
