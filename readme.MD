@@ -13,7 +13,7 @@ Yet another DALL-E Image Generation App! This application utilises OpenAI's DALL
 ## How to Use
 
 1. **Community Gallery:**
-   - Explore the inspiring images shared by other users in the community gallery.
+   - Explore the images shared by other users in the community gallery.
 
 2. **Image Generation:**
    - Click 'Create' and enter your text prompt in the designated area.
