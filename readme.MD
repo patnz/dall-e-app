@@ -23,7 +23,6 @@ Yet another DALL-E Image Generation App! This application utilises OpenAI's DALL
 
 - **Frontend:**
   - React
-  - React Router DOM
   - Vite
   - Tailwind CSS
 
@@ -32,4 +31,4 @@ Yet another DALL-E Image Generation App! This application utilises OpenAI's DALL
   - Express
   - MongoDB with Mongoose
   - Cloudinary
-  - OpenAI SDK
+  - OpenAI
