@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 
-import { Card, FormField, Loader } from '../components'
+import { Card, FormField, Loader, Loader2 } from '../components'
 
 const RenderCards = ({ data, title }) => {
   if (data?.length > 0) {
@@ -91,7 +91,7 @@ const Home = () => {
       <div className="mt-10">
         {loading ? (
           <div className="flex justify-center items-center">
-            <Loader />
+            <Loader2 />
           </div>
         ) : (
           <>
