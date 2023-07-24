@@ -17,7 +17,7 @@ Yet another DALL-E Image Generation App! This application utilises OpenAI's DALL
 
 2. **Image Generation:**
    - Click 'Create' and enter your text prompt in the designated area.
-   - Click the 'Generate' button, and watch as our powerful AI turns your text into a unique image.
+   - Click the 'Generate' button, and AI will turn your text into a unique image.
 
 ## Technologies Used
 
