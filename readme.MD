@@ -4,10 +4,10 @@ Yet another DALL-E Image Generation App! This application utilises OpenAI's DALL
 
 ## Features
 
-- Transform text prompts into stunning AI-generated images.
+- Transform text prompts into AI-generated images.
 - Explore a collection of images created by the AI community in the gallery.
 - Share your own AI-generated images with the community.
-- Frontend and backend components have been deployed separately for efficient performance.
+- Frontend and backend have been deployed separately for efficient performance.
 - Backend powered by MongoDB for data storage and Cloudinary for image management.
 
 ## How to Use
@@ -29,6 +29,6 @@ Yet another DALL-E Image Generation App! This application utilises OpenAI's DALL
 - **Backend:**
   - Node.js
   - Express
-  - MongoDB with Mongoose
+  - MongoDB
   - Cloudinary
   - OpenAI
