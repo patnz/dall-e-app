@@ -89,8 +89,9 @@ const Post = () => {
       <div>
         <h1 className="font-extrabold text-[#222328] text-[32px]">Create</h1>
         <p className="mt-2 text-[#666e75] text-[14px] max-w-[500px]">
-          Generate an imaginative image through DALL-E AI and share it with the
-          community
+          Enter a prompt to create an image using DALL-E AI. Sit tight while the
+          image is rendering. This may take up to 20 seconds. Share it when
+          you're done.
         </p>
       </div>
 
@@ -158,7 +159,7 @@ const Post = () => {
             type="submit"
             className="mt-3 text-white bg-[#6469ff] font-medium rounded-md text-sm w-full sm:w-auto px-5 py-2.5 text-center"
           >
-            {loading ? 'Sharing...' : 'Share with the Community'}
+            {loading ? 'Sharing...' : 'Share your creation'}
           </button>
         </div>
       </form>
