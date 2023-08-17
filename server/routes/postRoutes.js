@@ -16,35 +16,10 @@ cloudinary.config({
 
 // OLD ROUTE TOO SLOW
 
-// router.route('/').get(async (req, res) => {
-//   try {
-//     const posts = await Post.find({})
-//     res.status(200).json({ success: true, data: posts })
-//   } catch (err) {
-//     res.status(500).json({
-//       success: false,
-//       message: 'Fetching posts failed, please try again',
-//     })
-//   }
-// })
-
-// NEW ROUTE ZOOM ZOOM
-
 router.route('/').get(async (req, res) => {
   try {
-    const postStream = Post.find({}).cursor()
-
-    res.status(200).json({ success: true }) // Send initial response
-
-    postStream.on('data', (post) => {
-      // Send each post as it arrives
-      res.write(JSON.stringify({ success: true, data: post }) + '\n')
-    })
-
-    postStream.on('end', () => {
-      // All data has been sent
-      res.end()
-    })
+    const posts = await Post.find({})
+    res.status(200).json({ success: true, data: posts })
   } catch (err) {
     res.status(500).json({
       success: false,
