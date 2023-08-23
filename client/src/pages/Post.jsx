@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 
 import { preview } from '../assets'
@@ -28,6 +28,7 @@ const Post = () => {
   const generateImage = async () => {
     if (form.prompt) {
       try {
+        console.log(form.prompt)
         setGeneratingImg(true)
         const response = await fetch(
           'https://dall-e-app-backend.onrender.com/api/v1/dalle',
@@ -75,6 +76,7 @@ const Post = () => {
         alert('Success')
         navigate('/')
         setLoading(false)
+        // moved setLoading function here to fix delay
       } catch (err) {
         alert(err)
       } finally {
@@ -90,9 +92,9 @@ const Post = () => {
       <div>
         <h1 className="font-extrabold text-[#222328] text-[32px]">Create</h1>
         <p className="mt-2 text-[#666e75] text-md max-w-[500px]">
-          Enter a prompt to create an image using DALL-E AI. Sit tight while the
+          {`Enter a prompt to create an image using DALL-E AI. Sit tight while the
           image is rendering. This may take up to 20 seconds. Share it when
-          you're done.
+          you're done.`}
         </p>
         <p className="mt-4 text-[#666e75] text-lg">
           Once your image has generated, be sure to share it!
