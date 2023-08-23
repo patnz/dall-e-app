@@ -89,20 +89,23 @@ const Post = () => {
     <section className="max-w-7xl mx-auto">
       <div>
         <h1 className="font-extrabold text-[#222328] text-[32px]">Create</h1>
-        <p className="mt-2 text-[#666e75] text-[14px] max-w-[500px]">
+        <p className="mt-2 text-[#666e75] text-md max-w-[500px]">
           Enter a prompt to create an image using DALL-E AI. Sit tight while the
           image is rendering. This may take up to 20 seconds. Share it when
           you're done.
+        </p>
+        <p className="mt-4 text-[#666e75] text-lg">
+          Once your image has generated, be sure to share it!
         </p>
       </div>
 
       <form className="mt-16 max-w-3xl" onSubmit={handleSubmit}>
         <div className="flex flex-col gap-5">
           <FormField
-            labelName="Your Name"
+            labelName="Your name"
             type="text"
             name="name"
-            placeholder="Ex., john doe"
+            placeholder="Jane Doe"
             value={form.name}
             handleChange={handleChange}
           />
@@ -145,20 +148,14 @@ const Post = () => {
           <button
             type="button"
             onClick={generateImage}
-            className=" text-white bg-green-700 font-medium rounded-md text-sm w-full sm:w-auto px-5 py-2.5 text-center"
+            className=" text-white bg-green-700 font-medium rounded-md text-md w-full sm:w-auto px-5 py-2.5 text-center"
           >
             {generatingImg ? 'Generating...' : 'Generate'}
           </button>
-        </div>
 
-        <div className="mt-10">
-          <p className="mt-2 text-[#666e75] text-[14px]">
-            ** Once you have created the image you want, you can share it with
-            others in the gallery **
-          </p>
           <button
             type="submit"
-            className="mt-3 text-white bg-[#6469ff] font-medium rounded-md text-sm w-full sm:w-auto px-5 py-2.5 text-center"
+            className="text-white bg-[#6469ff] font-medium rounded-md text-md w-full sm:w-auto px-5 py-2.5 text-center"
           >
             {loading ? 'Sharing...' : 'Share your creation'}
           </button>
