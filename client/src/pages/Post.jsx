@@ -74,10 +74,11 @@ const Post = () => {
         await response.json()
         alert('Success')
         navigate('/')
+        setLoading(false)
       } catch (err) {
         alert(err)
       } finally {
-        setLoading(false)
+        // setLoading(false)
       }
     } else {
       alert('Please generate an image with proper details')
