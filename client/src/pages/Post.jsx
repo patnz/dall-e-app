@@ -28,10 +28,10 @@ const Post = () => {
   const generateImage = async () => {
     if (form.prompt) {
       try {
-        console.log(form.prompt)
         setGeneratingImg(true)
         const response = await fetch(
           'https://dall-e-app-backend.onrender.com/api/v1/dalle',
+          // 'http://localhost:8080/api/v1/dalle',
           {
             method: 'POST',
             headers: {
@@ -63,6 +63,8 @@ const Post = () => {
       try {
         const response = await fetch(
           'https://dall-e-app-backend.onrender.com/api/v1/post',
+          // 'http://localhost:8080/api/v1/post',
+
           {
             method: 'POST',
             headers: {
@@ -150,7 +152,7 @@ const Post = () => {
           <button
             type="button"
             onClick={generateImage}
-            className=" text-white bg-green-700 font-medium rounded-md text-md w-full sm:w-auto px-5 py-2.5 text-center"
+            className=" text-white bg-green-700 font-medium rounded-md text-sm w-full sm:w-auto px-5 py-2.5 text-center"
           >
             {generatingImg ? 'Generating...' : 'Generate'}
           </button>
