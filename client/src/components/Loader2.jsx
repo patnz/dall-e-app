@@ -18,12 +18,8 @@ const Loader2 = () => (
         fill="currentFill"
       />
     </svg>
-    <p className="mx-auto text-center">
-      The database is firing up! This can take up to 30 seconds...
-    </p>
-    <p className="mx-auto text-center">
-      Apologies! Sit tight. This is a known issue I am currently debugging.
-    </p>
+    <p className="mx-auto text-center">The database is firing up!</p>
+
     <p className="mx-auto text-center">
       Create an image while you wait on the 'Create' page.
     </p>

@@ -18,7 +18,8 @@ const Loader = () => (
         fill="currentFill"
       />
     </svg>
-    <p className="mx-auto">Please be patient. Content is loading...</p>
+    <p className="mx-auto">*Beep, boop*</p>
+    <p className="mx-auto">Your image is generating...</p>
   </div>
 )
 
