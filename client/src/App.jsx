@@ -2,6 +2,7 @@ import React from 'react'
 import { BrowserRouter, Link, Route, Routes } from 'react-router-dom'
 import { logo } from './assets'
 import { Home, Post } from './pages'
+import { Analytics } from '@vercel/analytics/react'
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
           <Route path="/post" element={<Post />} />
         </Routes>
       </main>
+      <Analytics />
     </BrowserRouter>
   )
 }
