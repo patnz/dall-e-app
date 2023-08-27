@@ -18,9 +18,16 @@ const Loader2 = () => (
         fill="currentFill"
       />
     </svg>
-    <p className="mx-auto text-center">The database is firing up!</p>
-
+    <p className="mx-auto text-center font-bold">The API is firing up!</p>
     <p className="mx-auto text-center">
+      That's what you get when you use a free web service.
+    </p>
+    <p className="mx-auto text-center">
+      Unfortunately the server run constantly, but spins up on a request. This
+      takes time (30s).
+    </p>
+
+    <p className="mx-auto text-center font-bold">
       Create an image while you wait on the 'Create' page.
     </p>
   </div>
