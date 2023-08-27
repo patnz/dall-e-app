@@ -23,8 +23,8 @@ const Loader2 = () => (
       That's what you get when you use a free web service.
     </p>
     <p className="mx-auto text-center">
-      Unfortunately the server run constantly, but spins up on a request. This
-      takes time (30s).
+      Unfortunately the server doesn't run constantly, but spins up on a
+      request. This takes time (30s).
     </p>
 
     <p className="mx-auto text-center font-bold">
