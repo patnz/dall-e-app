@@ -1,5 +1,7 @@
 # DALL-E Image Generation App
 
+#### Note: Image generation currently not available on account of running out of Open AI credit.
+
 Yet another DALL-E Image Generation App! This application utilises OpenAI's DALL-E image generation AI to turn text prompts into AI-generated images. [Check it out here](http://dall-e-app-rho.vercel.app) and post your image to the gallery.
 
 ## Features
