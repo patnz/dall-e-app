@@ -1,4 +1,5 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
+import { mockResponse } from '../constants/gallery'
 
 import { Card, FormField, Loader, Loader2 } from '../components'
 
@@ -23,24 +24,17 @@ const Home = () => {
   const fetchPosts = async () => {
     setLoading(true)
 
+    let response = null
     try {
-      const response = await fetch(
-        'https://dall-e-app-backend.onrender.com/api/v1/post',
-        {
-          method: 'GET',
-          headers: {
-            'Content-Type': 'application/json',
-          },
-        }
-      )
-
-      if (response.ok) {
-        const result = await response.json()
-        setAllPosts(result.data.reverse())
-      }
+      response = await new Promise((resolve) => {
+        setTimeout(() => {
+          resolve({ ok: true, data: mockResponse }) // Simulated response
+        }, 5000)
+      })
     } catch (err) {
       alert(err)
     } finally {
+      setAllPosts(mockResponse.data.reverse())
       setLoading(false)
     }
   }
